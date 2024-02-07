@@ -88,7 +88,15 @@ python3 pgp_filelock.py decrypt --file "encrypted_file.pgp" --private-key-file "
 
 ## Compiling Binaries
 
-For those who wish to compile the binaries themselves, here are the commands for Windows and Linux:
+Before attempting to compile the binaries, please ensure the following prerequisites are met:
+
+- PyInstaller is installed. If not, install it using pip:
+  ```
+  pip install pyinstaller
+  ```
+- Ensure that the required image files (`key.png`, `lock.png`, `unlock.png`) and the icon file (`lock.ico`) are located in the script's directory, having been copied there from the `images` folder.
+
+Once you have confirmed the prerequisites, use the following commands to compile the binaries for Windows and Linux:
 
 ### Windows
 
@@ -101,8 +109,6 @@ pyinstaller --onefile --add-data "key.png;." --add-data "lock.png;." --add-data 
 ```
 pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-linux --icon=lock.ico pgp_filelock.py
 ```
-
-Please ensure you have pyinstaller installed (`pip install pyinstaller`) and the required image files and icons in the correct locations before running these commands (check images folder).
 
 
 ## ToDo 
