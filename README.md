@@ -11,10 +11,6 @@ PGP FileLock is a lightweight tool for encrypting and decrypting files using PGP
 - Command Line Interface (CLI) for automation and scripting.
 - Cross-platform support for Windows, macOS, and Linux.
 
-## Download Precompiled Binaries
-
-For added convenience, precompiled binaries for Windows and Linux are available for download.
-
 ## Installation
 
 Clone the repository or download the source code:
@@ -28,6 +24,11 @@ pip install -r requirements.txt
 Ensure you have Python 3 installed on your system. No additional installation steps are required as the tool is a standalone Python script.
 
 ## Usage
+
+
+### Download Precompiled Binaries
+
+For added convenience, precompiled binaries for Windows and Linux are available for download.
 
 ### GUI Mode
 
@@ -78,6 +79,12 @@ python3 pgp_filelock.py decrypt --file "encrypted_file.pgp" --private-key-file "
 ```
 python3 pgp_filelock.py decrypt --file "encrypted_file.pgp" --private-key-file "private_key.asc"
 ```
+
+## Screenshots
+
+![2024-02-07_17h23_59](https://github.com/x011/PGP-FileLock/assets/4313821/0627b00b-a269-4eca-ba1e-4899b4146846)
+![2024-02-07_17h25_15](https://github.com/x011/PGP-FileLock/assets/4313821/bbbfc22d-328e-4f45-a50c-c9d97eea67b0)
+
 
 ## License
 
