@@ -11,6 +11,10 @@ PGP FileLock is a lightweight tool for encrypting and decrypting files using PGP
 - Command Line Interface (CLI) for automation and scripting.
 - Cross-platform support for Windows, macOS, and Linux.
 
+## Download Precompiled Binaries
+
+For added convenience, precompiled binaries for Windows and Linux are available for download.
+
 ## Installation
 
 Clone the repository or download the source code:
