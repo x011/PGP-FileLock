@@ -28,7 +28,7 @@ Ensure you have Python 3 installed on your system. No additional installation st
 
 ### Download Precompiled Binaries
 
-For added convenience, precompiled binaries for Windows and Linux are available for download.
+For added convenience, precompiled binaries for Windows and Linux are available for [download](https://github.com/x011/PGP-FileLock/releases/).
 
 ### GUI Mode
 
@@ -85,6 +85,13 @@ python3 pgp_filelock.py decrypt --file "encrypted_file.pgp" --private-key-file "
 ![2024-02-07_17h23_59](https://github.com/x011/PGP-FileLock/assets/4313821/0627b00b-a269-4eca-ba1e-4899b4146846)
 ![2024-02-07_17h25_15](https://github.com/x011/PGP-FileLock/assets/4313821/bbbfc22d-328e-4f45-a50c-c9d97eea67b0)
 
+## ToDo 
+
+The following features are on the roadmap and may be added in the future, schedule permitting:
+
+- [ ] Verify
+- [ ] Encrypt + Sign
+- [ ] Decrypt + Verify
 
 ## License
 
