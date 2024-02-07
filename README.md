@@ -124,7 +124,7 @@ Contributions are welcome! Please feel free to submit pull requests, report bugs
 
 ## Support
 
-If you need help or have any questions, please open an issue in the GitHub issue tracker for this project.
+If you need help or have any questions, please open an [issue](https://github.com/x011/PGP-FileLock/issues).
 
 ## License
 
