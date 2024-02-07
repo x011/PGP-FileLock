@@ -85,6 +85,26 @@ python3 pgp_filelock.py decrypt --file "encrypted_file.pgp" --private-key-file "
 ![2024-02-07_17h23_59](https://github.com/x011/PGP-FileLock/assets/4313821/0627b00b-a269-4eca-ba1e-4899b4146846)
 ![2024-02-07_17h25_15](https://github.com/x011/PGP-FileLock/assets/4313821/bbbfc22d-328e-4f45-a50c-c9d97eea67b0)
 
+
+## Compiling Binaries
+
+For those who wish to compile the binaries themselves, here are the commands for Windows and Linux:
+
+### Windows
+
+```
+pyinstaller --onefile --add-data "key.png;." --add-data "lock.png;." --add-data "unlock.png;." --clean --name pgp_filelock_1.0.0_x86_64-windows.exe --icon=lock.ico pgp_filelock.py
+```
+
+### Linux
+
+```
+pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-linux --icon=lock.ico pgp_filelock.py
+```
+
+Please ensure you have the required image files and icons in the correct locations before running these commands (check images folder).
+
+
 ## ToDo 
 
 The following features are on the roadmap and may be added in the future, schedule permitting:
