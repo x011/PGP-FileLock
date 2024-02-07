@@ -102,7 +102,7 @@ pyinstaller --onefile --add-data "key.png;." --add-data "lock.png;." --add-data 
 pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-linux --icon=lock.ico pgp_filelock.py
 ```
 
-Please ensure you have the required image files and icons in the correct locations before running these commands (check images folder).
+Please ensure you have pyinstaller installed (`pip install pyinstaller`) and the required image files and icons in the correct locations before running these commands (check images folder).
 
 
 ## ToDo 
