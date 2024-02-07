@@ -53,7 +53,7 @@ def generate_keys(passphrase, private_key_file, public_key_file, overwrite=False
                         key_expiration=expire_date)  # Set the expiration date here
 
     # Generate subkey for encryption
-    subkey = PGPKey.new(PubKeyAlgorithm.RSAEncryptOrSign, 4096)
+    subkey = PGPKey.new(PubKeyAlgorithm.RSAEncryptOrSign, key_size)
     primary_key.add_subkey(subkey, usage={KeyFlags.EncryptCommunications, KeyFlags.EncryptStorage})
 
     # Protect the primary key with the passphrase
@@ -388,13 +388,8 @@ generate_parser = subparsers.add_parser('generate', help='Generate PGP keys')
 generate_parser.add_argument('--name', required=True, help='Name for the UID')
 generate_parser.add_argument('--email', required=True, help='Email for the UID')
 generate_parser.add_argument('--expire-years', type=int, default=0, help='Number of years until the key expires (optional, default: 0 for no expiration)')
-
 generate_parser.add_argument('--key-size', type=int, choices=[1024, 2048, 4096, 8192], default=4096, help='Key size in bits (default: 4096)')
-
-
-
 generate_parser.add_argument('--passphrase', nargs='?', default=None, help='Passphrase for the private key (will prompt if not provided)')
-
 generate_parser.add_argument('--private-key-file', nargs='?', default='private_key.asc', help='Filename for the private key (default: private_key.asc in current directory)')
 generate_parser.add_argument('--public-key-file', nargs='?', default='public_key.asc', help='Filename for the public key (default: public_key.asc in current directory)')
 generate_parser.add_argument('--overwrite', action='store_true', help='Overwrite existing keys without prompt (default: False)')
