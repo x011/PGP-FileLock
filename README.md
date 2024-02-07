@@ -110,7 +110,6 @@ pyinstaller --onefile --add-data "key.png;." --add-data "lock.png;." --add-data 
 pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-linux --icon=lock.ico pgp_filelock.py
 ```
 
-
 ## ToDo 
 
 The following features are on the roadmap and may be added in the future, schedule permitting:
@@ -118,10 +117,6 @@ The following features are on the roadmap and may be added in the future, schedu
 - [ ] Verify
 - [ ] Encrypt + Sign
 - [ ] Decrypt + Verify
-
-## License
-
-PGP FileLock is licensed under the GNU General Public License v3.0 (GPL-3.0). For more information, please see the [LICENSE](LICENSE) file.
 
 ## Contributing
 
@@ -131,4 +126,6 @@ Contributions are welcome! Please feel free to submit pull requests, report bugs
 
 If you need help or have any questions, please open an issue in the GitHub issue tracker for this project.
 
+## License
 
+PGP FileLock is licensed under the GNU General Public License v3.0 (GPL-3.0). For more information, please see the [LICENSE](LICENSE) file.
