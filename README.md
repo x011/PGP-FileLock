@@ -116,14 +116,6 @@ pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data 
 pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-macos.app --icon=lock.ico pgp_filelock.py
 ```
 
-## ToDo 
-
-The following features are on the roadmap for potential future inclusion, depending on my limited availability:
-
-- [ ] Verify
-- [ ] Encrypt + Sign
-- [ ] Decrypt + Verify
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests, report bugs, and suggest features.
