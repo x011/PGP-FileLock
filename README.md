@@ -118,7 +118,7 @@ pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data 
 
 ## ToDo 
 
-The following features are on the roadmap and may be added in the future, schedule permitting:
+The following features are on the roadmap for potential future inclusion, depending on my limited availability:
 
 - [ ] Verify
 - [ ] Encrypt + Sign
