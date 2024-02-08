@@ -28,7 +28,7 @@ Ensure you have Python 3 installed on your system. No additional installation st
 
 ### Download Precompiled Binaries
 
-For added convenience, precompiled binaries for Windows and Linux are available for [download](https://github.com/x011/PGP-FileLock/releases/).
+For added convenience, precompiled binaries for Windows, Linux and macOS are available for [download](https://github.com/x011/PGP-FileLock/releases/).
 
 ### GUI Mode
 
@@ -108,6 +108,12 @@ pyinstaller --onefile --add-data "key.png;." --add-data "lock.png;." --add-data 
 
 ```
 pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-linux --icon=lock.ico pgp_filelock.py
+```
+
+## macOS
+
+```
+pyinstaller --onefile --add-data "key.png:." --add-data "lock.png:." --add-data "unlock.png:." --clean --name pgp_filelock_1.0.0_x86_64-macos.app --icon=lock.ico pgp_filelock.py
 ```
 
 ## ToDo 
